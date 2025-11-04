@@ -1,8 +1,9 @@
 // config.js
-// ⚠️ لا تشارك هذا الملف مع أي شخص، لأنه يحتوي على التوكن السري للبوت
+// هذا الملف آمن ولا يحتوي أي توكن أو IDs مباشرة
+// يقوم فقط بقراءة القيم من متغيرات البيئة (Environment Variables)
 
 module.exports = {
-  DISCORD_TOKEN:'MTM4NzkxMjA3ODQ4ODExMzIyNQ.GOVfSM.GwSi8BPtCNJcxBtpmn7FTHG67Ep_M1Yzl_y9h4',
-  CLIENT_ID:'1387912078488113225',
-  GUILD_ID: '1387911702976270460'
+  DISCORD_TOKEN: process.env.DISCORD_TOKEN,
+  CLIENT_ID: process.env.CLIENT_ID,
+  GUILD_ID: process.env.GUILD_ID
 };
